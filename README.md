@@ -7,12 +7,18 @@ As a React beginner, my goal with this project is to provide a platform for shar
 
 
 ## Table of Contents
+- [Demo](#demo)
 - [Screenshots](#screenshots)
 - [Project Description](#project-description)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
+
+## Demo 
+
+You can check out the live demo of the project here: [Demo link](https://joke-hub.netlify.app/)
+
 
 ## Screenshots
 - ### Dark mode
