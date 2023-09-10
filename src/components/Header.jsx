@@ -1,3 +1,6 @@
+import logo from "../../public/logo.avif"
+
+
 export default function Header() {
   const setThemeMode = (e) => {
     if (e.target.checked) {
@@ -12,7 +15,7 @@ export default function Header() {
     <nav>
       <div className="container">
         <div className="nav--logo">
-          <img src="../../public/logo.avif" alt="this is our logo" />
+          <img src={logo} alt="this is our logo" />
           <span>jokeHub</span>
         </div>
         <input
