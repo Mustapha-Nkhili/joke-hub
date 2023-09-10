@@ -1,0 +1,37 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --bg-color: hsl(208, 29%, 16%);
+  --txt-color: hsla(0, 0%, 100%, 0.87);
+  --nav-color: hsl(208, 29%, 15%);
+  --joke-card-clr: #FBEED0;
+  --yellow-clr: yellow;
+  --nav-box-shadow-clr: hsla(0, 0%, 100%, 0.160);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+[aria-theme="light"] {
+  --bg-color: hsl(0, 0%, 100%, 0.5);
+  --txt-color: hsl(0, 0%, 14%);
+  --nav-color: hsla(0, 0%, 100%, 0.8);
+  --joke-card-clr: #FBEED0;
+  --yellow-clr: rgba(255, 196, 0, 0.979);
+  --nav-box-shadow-clr: hsla(0, 2%, 20%, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 350ms ease-in-out;
+}
+
+body {
+  background-color: var(--bg-color);
+}

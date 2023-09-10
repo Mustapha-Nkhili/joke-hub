@@ -1,0 +1,139 @@
+/* general style */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Start nav */
+nav {
+  background-color: var(--nav-color);
+  padding: 20px 0;
+  box-shadow: 0px 3px 7px var(--nav-box-shadow-clr);
+  border-bottom: 1px solid hsla(0, 0%, 53%, 0.452);
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav--logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav--logo img {
+  width: 40px;
+  margin-right: 10px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nav--logo span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--yellow-clr);
+}
+
+.nav--logo span::first-letter {
+  font-size: 1.5rem;
+  color: var(--txt-color);
+}
+
+.theme-toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 60px;
+  height: 30px;
+  background: black url("./assets/dark-mode-image.avif") no-repeat left top;
+  background-size: cover;
+  border: 2px solid #ffff;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 350ms ease-in;
+}
+
+.theme-toggle:checked {
+  background: white url("./assets/light-mode-image.webp") no-repeat -464px top;
+}
+.theme-toggle::before {
+  content: "";
+  display: block;
+  background: #ffff url("./assets/moon.svg") no-repeat center;
+  background-size: 10px;
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 3px 0 0 3px;
+  transition: all 350ms ease-in;
+}
+
+.theme-toggle:checked::before {
+  margin-left: 33px;
+  background: black url("./assets/sun.svg") no-repeat center;
+}
+
+/* End nav */
+
+/* Start jokes  */
+.jokes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  padding: 30px;
+  gap: 20px;
+}
+
+.joke {
+  background-color: var(--joke-card-clr);
+  color: black;
+  border-radius: 6px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.joke img {
+  position: absolute;
+  left: -20px;
+  bottom: -25px;
+  width: 70px;
+}
+
+.joke img:first-child {
+  right: -30px;
+  top: -35px;
+  width: 80px;
+}
+
+.joke header {
+  border-radius: 6px 6px 0 0;
+  background-color: #E596FD;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.joke main {
+  padding: 25px 20px;
+}
+
+.joke main h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.2;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+.joke main p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #888;
+}
+
+/* End jokes  */
